@@ -107,11 +107,11 @@ public:
 };
 
 istream& operator>>(istream& input, Lizard& lizard) {
-    return lizard.ReadFromConsole(input);
+    return lizard.ReadFromConsole(in);
 }
 
 ostream& operator<<(ostream& output, const Lizard& lizard) {
-    return lizard.WriteToConsole(output);
+    return lizard.WriteToConsole(out);
 }
 
 int main() {
