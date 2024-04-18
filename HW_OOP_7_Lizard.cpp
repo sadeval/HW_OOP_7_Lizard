@@ -106,11 +106,11 @@ public:
     }
 };
 
-istream& operator>>(istream& input, Lizard& lizard) {
+istream& operator>>(istream& in, Lizard& lizard) {
     return lizard.ReadFromConsole(in);
 }
 
-ostream& operator<<(ostream& output, const Lizard& lizard) {
+ostream& operator<<(ostream& out, const Lizard& lizard) {
     return lizard.WriteToConsole(out);
 }
 
